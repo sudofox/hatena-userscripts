@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name Fix for Hatena Zendesk Support Ticket Visibility Issue
+@author sudofox (github.com/sudofox)
+@description Right now, you can't see the list of open/past support tickets in Hatena's Zendesk due to a CSS bug. This fixes that.
+@version 1.0
+@include https://hatena.zendesk.com/*
+==/UserStyle== */
+
+@-moz-document url-prefix("https://hatena.zendesk.com/hc/ja/requests/") {
+  .requests {
+      display: initial;
+  }
+}
